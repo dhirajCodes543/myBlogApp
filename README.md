@@ -1,39 +1,42 @@
-📝 Blog Website
-This is a full-stack blog website where users can sign up, log in, and write blog posts. It has both frontend and backend.
+# 📝 Blog Website
 
-🧠 What It Uses
-🛠️ Backend
-Node.js + Express
+A full-stack blog website where users can **sign up**, **log in**, and **write blog posts**. Built with a modern tech stack for both frontend and backend.
 
-MongoDB (for saving users and blogs)
+---
 
-JWT (for login sessions)
+## 💻 Tech Stack
 
-Bcrypt (for password hashing)
+### 🧠 Backend
 
-🎨 Frontend
-React.js
+- ⚙️ **Node.js + Express.js**
+- 🗃️ **MongoDB** (for storing users and blogs)
+- 🔐 **JWT** (for login sessions)
+- 🧂 **Bcrypt** (for salted password hashing)
 
-Tailwind CSS
+### 🎨 Frontend
 
-Axios (to talk to backend)
+- ⚛️ **React.js**
+- 💅 **Tailwind CSS**
+- 🔄 **Axios** (for API requests)
 
-✨ What You Can Do
-Create a new account
+---
 
-Log in securely
+## ✨ Features
 
-Write new blog posts
+- ✅ User Sign Up & Log In
+- 🔐 Passwords are hashed using bcrypt with salt
+- 🔑 JWT tokens for secure authentication
+- ✍️ Create, Edit, and Delete blog posts
+- 🌍 Public feed to view all blogs
+- 🧼 Clean and minimal UI with Tailwind
 
-Edit or delete your own blogs
+## 🔑 Auth Flow
 
-Read all public blogs
+1. User signs up with email and password.
+2. Password is hashed with bcrypt and stored.
+3. On login, server returns a signed JWT.
+4. Client stores the JWT and sends it in headers (`Authorization: Bearer <token>`) for protected routes.
 
-🔐 How Login Works
-Your password is hashed (secured) using bcrypt
+   ## 🧑‍💻 Author
 
-After login, a token is given (JWT)
-
-This token is stored in the browser
-
-It’s sent with every request to access private actions like posting blogs
+Built with ❤️ by Dhiraj Barnwal
